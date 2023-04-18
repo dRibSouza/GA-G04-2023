@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.center{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+}
+.main{
+    padding: 40px 0;
+    width: 100%;
+    background-color: blueviolet;
+    background-image: url("https://gizmodo.uol.com.br/wp-content/blogs.dir/8/files/2022/07/national-cancer-institute-KrsoedfRAf4-unsplash-1.jpg");
+    min-height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.menu h3{
+    color: white;
+    
+}
+.menu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.menu a{
+    color:white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+.apresentacao{
+    display: flex;
+    
+}
