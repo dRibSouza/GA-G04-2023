@@ -1,4 +1,5 @@
 import './Content.css'
+import img from '../assets/imagem1.png'
 function Content() {
     return (
         <>
@@ -11,7 +12,7 @@ function Content() {
                             </p>
                         </li>
                         <li>
-                            <img src="Public health-amico 1.png" alt="vários pessoas"></img>
+                            <img src={img} alt="várias pessoas"></img>
                         
                         </li>
                         <li>
