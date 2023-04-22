@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+  .container-cadastro {
+    width: 100%;
+    min-width: 100px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #d1d1d1;
+  }  
+  .container-cadastro2 {
+    width: 100%;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    flex-wrap: wrap;
+;
+    overflow: hidden;
+    padding: 40px 60px 40px 60px;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
+  }
+  h1{
+    text-align: center;
+    color: rgb(202, 202, 202);
+    font-family: "Open Sans Condesed", sans-serif;
+  }
