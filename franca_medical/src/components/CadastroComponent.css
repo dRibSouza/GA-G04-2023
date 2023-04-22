@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
   }
   .container-cadastro {
     width: 100%;
@@ -16,6 +17,7 @@
     width: 100%;
     background-color: white;
     color: rgb(0, 0, 0);
+    flex-wrap: wrap;
 ;
     overflow: hidden;
     padding: 40px 60px 40px 60px;
