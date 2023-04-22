@@ -1,0 +1,185 @@
+.Exames { 
+	overflow:hidden;
+}
+.Exames { 
+	background-color:rgba(237.0000010728836, 237.0000010728836, 233.00000131130219, 1);
+	width:1920px;
+	height:1080px;
+	position:absolute;
+}
+.titulo1 { 
+	width:374px;
+	height:106px;
+	position:absolute;
+	left:110px;
+	top:9px;
+}
+.titulo2 { 
+	color:rgba(0, 95.39594069123268, 126.43750101327896, 1);
+	width:299px;
+	height:61px;
+	position:absolute;
+	left:75px;
+	top:16px;
+	font-family:Lora;
+	text-align:center;
+	font-size:30px;
+	letter-spacing:0;
+}
+
+.logo { 
+	background-image: url(img/franca\ medical\ logo.png);
+	width:106px;
+	height:106px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.caixa1 { 
+	background-color:rgba(0, 95.39594069123268, 126.43750101327896, 1);
+	width:1052px;
+	height:80px;
+	position:absolute;
+	left:698px;
+	top:172px;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+}
+.caixa2 { 
+	background-color:rgba(0, 95.39594069123268, 126.43750101327896, 1);
+	width:269px;
+	height:63px;
+	position:absolute;
+	left:742px;
+	top:491px;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+}
+.caixa3 { 
+	background-color:rgba(0, 95.39594069123268, 126.43750101327896, 1);
+	width:269px;
+	height:63px;
+	position:absolute;
+	left:742px;
+	top:785px;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+}
+.resultados { 
+	width:684px;
+	height:725px;
+	position:absolute;
+	left:43px;
+	top:325px;
+	background-image:url(img/Business\ merger-rafiki\ 1.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.texto1 { 
+	color:rgba(255, 255, 255, 1);
+	width:986px;
+	height:51px;
+	position:absolute;
+	left:732px;
+	top:186px;
+	font-family:Lora;
+	text-align:center;
+	font-size:40px;
+	letter-spacing:0;
+}
+.clique1 { 
+	color:rgba(255, 255, 255, 1);
+	width:264px;
+	height:47px;
+	position:absolute;
+	margin-top: 10px;
+	left:747px;
+	top:499px;
+	font-family:Lora;
+	text-align:center;
+	font-size:20px;
+	letter-spacing:0;
+}
+.clique2 { 
+	color:rgba(255, 255, 255, 1);
+	width:264px;
+	height:47px;
+	position:absolute;
+	margin-top: 10px;
+	left:747px;
+	top:793px;
+	font-family:Lora;
+	text-align:center;
+	font-size:20px;
+	letter-spacing:0;
+}
+.texto2 { 
+	color:rgba(0, 126.00000008940697, 167.00000524520874, 1);
+	width:224px;
+	height:77px;
+	position:absolute;
+	left:738px;
+	top:355px;
+	font-family:Lora;
+	text-align:center;
+	font-size:40px;
+	letter-spacing:0;
+}
+.texto3 { 
+	color:rgba(0, 126.00000008940697, 167.00000524520874, 1);
+	width:224px;
+	height:77px;
+	position:absolute;
+	left:738px;
+	top:649px;
+	font-family:Lora;
+	text-align:center;
+	font-size:40px;
+	letter-spacing:0;
+}
+.subtexto1 { 
+	color:rgba(0, 0, 0, 0.5);
+	width:910px;
+	height:49px;
+	position:absolute;
+	left:742px;
+	top:432px;
+	font-family:Lora;
+	text-align:center;
+	font-size:24px;
+	letter-spacing:0;
+}
+.subtexto2 { 
+	color:rgba(0, 0, 0, 0.5);
+	width:910px;
+	height:49px;
+	position:absolute;
+	left:747px;
+	top:726px;
+	font-family:Lora;
+	text-align:center;
+	font-size:24px;
+	letter-spacing:0;
+}
+.icone1 { 
+	background-color:rgba(0, 126.00000008940697, 167.00000524520874, 1);
+	width:10px;
+	height:46px;
+	position:absolute;
+	left:732px;
+	top:371px;
+}
+.icone2 { 
+	background-color:rgba(0, 126.00000008940697, 167.00000524520874, 1);
+	width:10px;
+	height:46px;
+	position:absolute;
+	left:732px;
+	top:665px;
+}

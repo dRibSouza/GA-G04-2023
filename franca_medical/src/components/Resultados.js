@@ -1,6 +1,4 @@
-import "./Navbar.css"
-
-function Navbar () {
+function Resultados () {
     
     return(
         <>
@@ -23,16 +21,11 @@ function Navbar () {
 
                 </a>
                 <div>
-                    <ul id="navbar">
+                    <ul id="resultados">
                         <li>
-                            <a className="active" href="index.html">Home</a>
+                            <a className="active">Resultados dos exames</a>
                         </li>
-                        <li>
-                            <a href="index.html">Serviços</a>
-                        </li>
-                        <li>
-                            <a href="index.html">Login</a>
-                        </li>
+                        
                     </ul>
                 </div>
 
@@ -42,4 +35,4 @@ function Navbar () {
     )
 }
 
-export default Navbar;
+export default Resultados;

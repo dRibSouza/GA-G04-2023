@@ -2,6 +2,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Content from './components/Content';
+import Resultados from './components/Resultados';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
 
       </div>
       <Content/>
+      <Resultados/>
     </div>
   );
 }
