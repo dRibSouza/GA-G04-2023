@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import logo from "../../assets/logo_franca_medical.svg"
 import { Link } from "react-router-dom";
 import './style.css'
@@ -40,13 +39,5 @@ export const Cadastro = () => {
                 </div>
             </div>
       </div>
-=======
-import { CadastroComponent } from "../../components/CadastroComponent";
-
-
-export const Cadastro = () => {
-    return (
-        <CadastroComponent />
->>>>>>> main
     );
 }
