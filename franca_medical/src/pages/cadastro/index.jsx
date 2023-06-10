@@ -15,7 +15,7 @@ export const Cadastro = () => {
     const handleBlur = () => {
         validate();
         setCPF(cpf);
-    }
+    };
 
     const validate = () => {
         // event.preventDefault();

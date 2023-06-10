@@ -2,9 +2,9 @@ import logo from "../assets/logo_franca_medical.svg"
 import { Link } from "react-router-dom";
 import './LoginComponent.css'
 
-import { useState, useContext } from "react";
+import React, { useState, useContext } from "react";
 
-import { AuthContext, AuthProvicer} from "../contexts/auth";
+import { AuthContext } from "../contexts/auth";
 
 const LoginComponent = () => {
     const { authenticated, login} = useContext(AuthContext);
@@ -14,7 +14,6 @@ const LoginComponent = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
         console.log("submit", { email, password });
         
         login(email, password);
@@ -31,6 +30,7 @@ const LoginComponent = () => {
                     <form  className="login-form">
                         <span className="login-form-title">Bem vindo!</span>
                         <from classeName="form" onSubmit={handleSubmit}>
+
                             <span className="login-form-title">
                                 <img src={logo} alt="logo Franca Medical" />
                             </span>
@@ -50,13 +50,13 @@ const LoginComponent = () => {
                             </div>
 
                             <div className="container-login-form-btn">
-                            <Link to='' className="login-form-btn">
-                                <button className="login-form-btn">Login</button></Link>
+                                <button className="login-form-btn">Login</button>                                
                             </div>
 
                             <div className="text-center">
                                 <span className="txt1">Não possui conta?</span>
-                                <Link to="/cadastro" className="txt2">Criar Conta.</Link>
+                                <Link to="/cadastro" className="txt2">Criar Conta.
+                                </Link>
                             </div>
                         </from>
 
