@@ -1,7 +1,7 @@
 import logo from "../../assets/logo_franca_medical.svg"
 import { Link } from "react-router-dom";
 import './style.css'
-import { useState } from "react";
+import React, { useState } from "react";
 import validarCPF from "../../components/CpfValidation"
 
 export const Cadastro = () => {

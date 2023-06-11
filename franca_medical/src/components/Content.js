@@ -1,3 +1,4 @@
+import React from 'react'
 import './Content.css'
 import img from '../assets/imagem1.png'
 function Content() {

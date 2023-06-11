@@ -22,9 +22,6 @@ const LoginComponent = () => {
     return (
           
         <div className="container">
-
-            <p>{String(authenticated)}</p>
-
             <div className="container-login">
                 <div className="wrap-login">
                     <form  className="login-form">

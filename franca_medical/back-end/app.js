@@ -1,5 +1,3 @@
-
-
 require('dotenv').config()
 
 
@@ -24,9 +22,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 //app.use('/users', usersRouter);
 
-
-
-
 //Registrar User
 app.post('/auth/register', async (req, res) =>{
     const {name, email, password, confirmarpassword } = req.body
@@ -42,9 +37,6 @@ app.post('/auth/register', async (req, res) =>{
 app.post("/auth/login", async(req, res) => {
     const {email, password} = req.body
 })
-
-
-
 
 //Rotas
 
