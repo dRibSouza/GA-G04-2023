@@ -7,7 +7,7 @@ import React, { useState, useContext } from "react";
 import { AuthContext } from "../contexts/auth";
 
 const LoginComponent = () => {
-    const { authenticated, login} = useContext(AuthContext);
+    const { login } = useContext(AuthContext);
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
