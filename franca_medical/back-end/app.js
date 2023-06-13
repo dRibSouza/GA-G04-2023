@@ -1,32 +1,45 @@
 require('dotenv').config()
 
+const express = require('express')
+const app = express()
 
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-//var usersRouter = require('./routes/users');
 
-var app = express();
+const mongoose = require('mongoose')
 
-require('./config/database')() //conexão ao banco
+const User = require('./models/User')
 
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+const path = require('path')
 
-app.use('/', indexRouter);
-//app.use('/users', usersRouter);
+const templatePath = path.join(__dirname, '../templates')
+
+
+const indexRouter = require('./routes/index');
+
+
+mongoose.connect('mongodb+srv://dsmg04pi320231:FATEC1234@cluster0.notixwg.mongodb.net/?retryWrites=true&w=majority').then(() => {
+    console.log(`Conectado ao MongoDB`)
+    
+    app.listen(5000, () => {
+        
+        console.log(`Rodando na porta 5000`)
+    })
+}).catch((error) => { 
+    console.log(error)
+})
+
+
+app.use(express.json())
+app.set('view engine', 'hbs')
+app.set("views", templatePath)
+app.use(express.urlencoded({ extended: false }))
+
 
 //Registrar User
 app.post('/auth/register', async (req, res) =>{
     const {name, email, password, confirmarpassword } = req.body
 
-    //validation
+    
     if(name) {
     return res.status(422).json({ msg: "Campo nome é obrigatório"})
     }
@@ -34,9 +47,23 @@ app.post('/auth/register', async (req, res) =>{
 
 
 //login user
-app.post("/auth/login", async(req, res) => {
-    const {email, password} = req.body
+app.post("/login", async (req, res) => {
+    try {
+        const check = await collection.findOne({ email: req.body.email })
+
+        if (check.senha === req.body.senha) {
+            res.render('home')
+        } else {
+            res.send('Senha Incorreta')
+        }
+    } catch (error) {
+        res.send('Login inválido')
+    }
 })
+
+
+const usuarioRouter = require('./routes/users')
+app.use('/user', usuarioRouter)
 
 //Rotas
 

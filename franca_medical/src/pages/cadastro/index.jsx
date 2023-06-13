@@ -12,6 +12,7 @@ export const Cadastro = () => {
     const [nome, setNome] = useState("")
     const [cpf, setCPF] = useState("")
     const [cpfErr, setCpfErr] = useState(false)
+    // eslint-disable-next-line
     const handleBlur = () => {
         validate();
         setCPF(cpf);
@@ -70,8 +71,10 @@ export const Cadastro = () => {
                             <span className="focus-input" data-placeholder="Confirmepassword"></span>
                         </div>
 
-                        <div className="container-login-form-btn">
-                            <button className="login-form-btn" >Cadastrar</button>
+                        <div className="container-login-form-btn">                            
+                             <button className="login-form-btn" >
+                                <Link to='/' className="login-form-btn"> Cadastrar </Link>
+                             </button>
                         </div>
 
                         <div className="text-center">

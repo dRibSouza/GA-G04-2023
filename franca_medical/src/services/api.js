@@ -1,10 +1,8 @@
 import axios from "axios";
 
 
-export const api = axios.create({
-    baseURL: "http://locahost:3000",
+const api = axios.create({
+    baseURL: "http://locahost:5000",
 });
 
-export const createSession = async (email, password) => {
-    return api.post("/sessions", {email, password});
-};
+export default api;

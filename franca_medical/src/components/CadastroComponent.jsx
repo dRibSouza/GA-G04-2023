@@ -14,7 +14,7 @@ import Select from 'react-select';
 
                 <div className="col-12 col-md-6">
                     <div className="form-group">
-                        <label>Nome Completo</label>
+                        <label>Nome</label>
                         <br></br>
                         <input type="text" className="form-control"
                             name="nameSocial"
@@ -38,7 +38,21 @@ import Select from 'react-select';
                         />
                     </div>
                 </div>
+                       
                 <br></br>
+                
+                <div className="col-12 col-md-6">
+                    <div className="form-group">
+                        <label>email</label>
+                        <br></br>
+                        <input type="text" className="form-control"
+                            name="email"
+                            value={""}
+                            onChange={e => this.updateField(e)}
+                            placeholder=""
+                        />
+                    </div>
+                </div>
 
                 <div className="col-12 col-md-6">
                     <div className="form-group">
@@ -58,7 +72,7 @@ import Select from 'react-select';
                     <div className="form-group">
                         <label>Confirme sua senha</label>
                         <br></br>
-                        <input type="confirmepassword" className="form-control"
+                        <input type="password" className="form-control"
                             name="confsenha"
                             value={""}
                             onChange={e => this.updateField(e)}
