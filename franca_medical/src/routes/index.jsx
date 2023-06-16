@@ -15,7 +15,7 @@ export const AppRoutes = () => {
                 <Route path='/login' exact element={<Login />} />
                 <Route path='/servicos' exact element={<Home />} />
                 <Route path='/cadastro' exact element={<Cadastro />} />
-                <Route path='/cadastro2' exact element={<Cadastro2 />} />
+                <Route path='/' exact element={<Home />} />
             </Routes>
         </Router>
     );

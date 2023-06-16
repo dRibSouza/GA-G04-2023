@@ -24,7 +24,7 @@ export const LoginComponent = () => {
                             <span className="focus-input" data-placeholder="Password"></span>
                         </div>
                         <div className="container-login-form-btn">
-                           <Link to='/cadastro2' className="login-form-btn"> <button className="login-form-btn">Login</button></Link>
+                           <Link to='/' className="login-form-btn"> <button className="login-form-btn">Login</button></Link>
                         </div>
                         <div className="text-center">
                             <span className="txt1">Não possui conta?</span>

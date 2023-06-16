@@ -29,7 +29,8 @@ export const Cadastro = () => {
                             <span className="focus-input" data-placeholder="Password"></span>
                         </div>
                         <div className="container-login-form-btn">
-                            <button className="login-form-btn">Cadastrar</button>
+                            <Link to='/' className="login-form-btn"> <button className="login-form-btn">Cadastrar</button></Link>
+                            
                         </div>
                         <div className="text-center">
                             <span className="txt1">Já possui um conta?</span>
