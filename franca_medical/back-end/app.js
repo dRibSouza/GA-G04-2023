@@ -3,8 +3,6 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 
-
-
 const mongoose = require('mongoose')
 
 const User = require('./models/User')
@@ -17,7 +15,7 @@ const templatePath = path.join(__dirname, '../templates')
 const indexRouter = require('./routes/index');
 
 
-mongoose.connect('mongodb+srv://dsmg04pi320231:FATEC1234@cluster0.notixwg.mongodb.net/?retryWrites=true&w=majority').then(() => {
+mongoose.connect('mongodb+srv://clinicauser:mN7gaBCeMNqFYpX2@cluster0.notixwg.mongodb.net/?retryWrites=true&w=majority').then(() => {
     console.log(`Conectado ao MongoDB`)
     
     app.listen(5000, () => {
