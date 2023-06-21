@@ -15,7 +15,7 @@ const templatePath = path.join(__dirname, '../templates')
 const indexRouter = require('./routes/index');
 
 
-mongoose.connect('mongodb+srv://clinicauser:mN7gaBCeMNqFYpX2@cluster0.notixwg.mongodb.net/?retryWrites=true&w=majority').then(() => {
+mongoose.connect('mongodb+srv://clinicauser:oyqWZLroNVtfIYXF@cluster0.notixwg.mongodb.net/?retryWrites=true&w=majority').then(() => {
     console.log(`Conectado ao MongoDB`)
     
     app.listen(5000, () => {
@@ -37,7 +37,6 @@ app.use(express.urlencoded({ extended: false }))
 app.post('/auth/register', async (req, res) =>{
     const {name, email, password, confirmarpassword } = req.body
 
-    
     if(name) {
     return res.status(422).json({ msg: "Campo nome é obrigatório"})
     }
